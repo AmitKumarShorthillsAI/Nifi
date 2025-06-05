@@ -1,0 +1,6 @@
+Extract the following information from the provided JSON string:
+
+1.  The array of records. Each object in this array has 'id' (number), 'value1' (number), 'value2' (number), and 'sum' (number). If this key is not present or the array is empty, then assume no records are to be extracted.
+
+Input JSON:
+{{{#1749115594661.text#}}}
