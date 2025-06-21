@@ -1,10 +1,8 @@
-# --- Step 2: Create Streamlit UI ---
-
 import streamlit as st
 import requests
 
 st.set_page_config(page_title="SecurePhotos Search", layout="wide")
-st.title("🔍 Semantic Image Search")
+st.title("🔍 Semantic Image Search (Qdrant)")
 
 query = st.text_input("Enter your query:", placeholder="e.g. a majestic white lion roaring")
 
