@@ -34,7 +34,7 @@ else:
 
 # Step 3: Index metadata fields for filtering and querying
 fields_to_index = {
-    "image_path": "keyword",
+    "image_path": "keyword", # "text" is analyzed for full-text search, allowing for tokenization and stemming, while "keyword" is used for exact matches without analysis.
     "summary": "text",
     "title": "keyword",
     "description": "text",
@@ -48,7 +48,7 @@ fields_to_index = {
     "appName": "keyword",
     "deviceType": "keyword",
     "localFolderName": "keyword",
-    "persons": "keyword"
+    "persons": "text"
 }
 
 index_url = f"{QDRANT_HOST}/collections/{COLLECTION_NAME}/index"
